@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/icon_radius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="圆角"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/icon_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="圆形"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/icon_bili"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="比例1.2"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/icon_jianjin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="渐进式"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/icon_cipan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="磁盘缓存"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/icon_gif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加载动图"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/icon_listener"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加载监听"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/icon_okhttp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="配置okhttp"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/simple_view"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        fresco:placeholderImage="@mipmap/ic_launcher_round"
+        fresco:viewAspectRatio="1.0" />
+
+</LinearLayout>
